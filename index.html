@@ -1,0 +1,56 @@
+<html lang="en">
+    <meta charset="utf-8">
+    <title>Service Workers - Tab Syncing</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <style>
+        html, body {
+            font-size: 10vw;
+            text-align: center;
+            font-family: 'Righteous',  sans-serif;
+            width:100%;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #counter-container {
+            display: flex;
+            height: 100%;
+            margin-top: 10vh;
+        }
+        #counter {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 50vh;
+            margin: 0 auto;
+            background: white;
+        }
+        #decrement:hover {
+            background: hsl(194, 74%, 64%);
+            cursor: pointer;
+        }
+        #increment:hover {
+            background: hsl(194, 74%, 64%);
+            cursor: pointer;
+        }
+        #increment, #decrement {
+            font-size: 10vw;
+            border: solid 1px rgba(0,0,0,0.25);
+            border-radius: 10px;
+            margin: 0;
+            background: white;
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+    <body>   
+        <div id="root"></div>
+        <script src="https://unpkg.com/react@16.0.0-rc.3/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <script src="./react-test.js" type="text/babel"></script>
+    </body>
+</html>
